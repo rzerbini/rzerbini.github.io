@@ -2,7 +2,7 @@
 title: ArchLinux Notes
 date: 2023-06-01 00:00 -500
 categories: [home, linux]
-tags: arch, servo, etc]                              # Tag always lowercase
+tags: [arch, servo, etc]                              # Tag always lowercase
 ---
 
 ## ArchLinux Notes
