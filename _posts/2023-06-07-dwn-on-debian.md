@@ -10,6 +10,8 @@ tags: [debian,linux,etc]             # Tag always lowercase
 * https://github.com/sgomare/featherOS.git
 * https://github.com/ChrisTitusTech/Debian-titus.git
 * https://github.com/drewgrif/dwm-debian.git
+* https://github.com/PietJanHein/dwm-setup
+
 
 other situs soon
 
