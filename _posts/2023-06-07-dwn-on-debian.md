@@ -14,5 +14,5 @@ tags: [debian,linux,etc]             # Tag always lowercase
 * https://johnjago.com/dwm/
 
 
-other situs soon
+other situs soon II
 
