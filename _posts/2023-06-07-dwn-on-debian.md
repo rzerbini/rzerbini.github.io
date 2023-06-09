@@ -13,6 +13,29 @@ tags: [debian,linux,etc]             # Tag always lowercase
 * https://github.com/PietJanHein/dwm-setup
 * https://johnjago.com/dwm/
 
+Base Instructions from https://johnjago.com/dwm/
 
+````
+wget https://dl.suckless.org/dwm/dwm-6.4.tar.gz
+wget https://dl.suckless.org/tools/dmenu-5.2.tar.gz
+wget https://dl.suckless.org/st/st-0.9.tar.gz
+
+tar xf (each_dir)
+
+cd (each_dir)
+make
+sudo make clean install
+
+sudo apt install make gcc libx11-dev libxft-dev libxinerama-dev xorg
+````
+Next, create a file called .xinitrc in your home directory. Place this inside of it:
+````
+while xsetroot -name "`date` `uptime | sed 's/.*,//'`"
+do
+	sleep 1
+done &
+exec dwm
+````
+----
 other situs soon II
 
