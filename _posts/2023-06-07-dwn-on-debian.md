@@ -26,14 +26,15 @@ cd (each_dir)
 make
 sudo make clean install
 
-sudo apt install make gcc libx11-dev libxft-dev libxinerama-dev xorg
+sudo apt install make gcc libx11-dev libxft-dev libxinerama-dev xorg kitty thunar
 ````
 Next, create a file called .xinitrc in your home directory. Place this inside of it:
 ````
 while xsetroot -name "`date` `uptime | sed 's/.*,//'`"
 do
 	sleep 1
-done &
+done
+
 exec dwm
 ````
 ----
