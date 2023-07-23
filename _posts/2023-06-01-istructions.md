@@ -9,8 +9,7 @@ tags: [servo, etc]                              # Tag always lowercase
 
 para iniciar
 ```bash
-D:
-cd \github\rzerbini.github.io
+cd \website
 bundle exec jekyll s
 ```
 criar pagina md com cabeçorio
