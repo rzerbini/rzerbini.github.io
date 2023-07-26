@@ -35,7 +35,7 @@ Declare the apps to autostart when launching a session:
 ```
 make sure sxhkdrc is launched at start: pgrep -x sxhkd > /dev/null || sxhkd &
 compositing manager: compton --backend glx --vsync opengl-swc &
-polkit usr/lib/xfce-polkit/xfce-polkit &
+usr/lib/xfce-polkit/xfce-polkit &
 bar (here polybar, throught a script): ~/bin/polybar.launch.sh &
 wallpaper: nitrogen --restore &
 ```
@@ -106,3 +106,4 @@ lock & suspend: i3lock --image ~/Pictures/Backgrounds/lock.png && sudo pm-suspen
 
 
 ref: https://medium.com/tech-notes-and-geek-stuff/installing-bspwm-on-debian-fd6a315f6903  
+     https://github.com/thespation/dpux_bspwm/tree/main
