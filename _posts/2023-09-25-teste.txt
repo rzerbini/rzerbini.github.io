@@ -1,0 +1,7 @@
+---
+title: Instructions Notes
+date: 2023-09-25 11:00 -000
+categories: [home, linux, virt]
+tags: [linux, virt-manager]              # Tag always lowercase
+---
+## texte
