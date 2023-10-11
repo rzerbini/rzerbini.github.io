@@ -8,10 +8,10 @@ tags: [archlinux, bspwm, install]
 ### Install Bspwm on Archlinux
 
 ```
-> sudo apt install bspwm sxhkd polybar compton rofi dunst nitrogen i3lock redshift cmus ranger dmenu
+> sudo pacman -S bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmus ranger dmenu thunar xorg-xinit kitty
 ```
 
-[Copy the example configuration to your ~/.config folder and make sure bspwmrc is executable :
+[opy the example configuration to your ~/.config folder and make sure bspwmrc is executable :
 
 
 ```
@@ -39,6 +39,13 @@ usr/lib/xfce-polkit/xfce-polkit &
 bar (here polybar, throught a script): ~/bin/polybar.launch.sh &
 wallpaper: nitrogen --restore &
 ```
+
+#### Picom
+The default configuration is available in /etc/xdg/picom.conf. For modifications, it can be copied to ~/.config/picom/picom.conf or ~/.config/picom.conf.
+
+To use another custom configuration file with picom, use the following command:
+
+$ picom --$HOME/.config/picom/picom.conf
 
 #### Bar: polybar
 We won’t use the default bspwm bar, but Polybar: highy customizable and documented. And fully compatible with bspwm.
