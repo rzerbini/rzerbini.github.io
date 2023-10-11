@@ -45,7 +45,9 @@ The default configuration is available in /etc/xdg/picom.conf. For modifications
 
 To use another custom configuration file with picom, use the following command:
 
-$ picom --$HOME/.config/picom/picom.conf
+```
+picom --$HOME/.config/picom/picom.conf
+```
 
 #### Bar: polybar
 We won’t use the default bspwm bar, but Polybar: highy customizable and documented. And fully compatible with bspwm.
