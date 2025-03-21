@@ -31,13 +31,15 @@ Check the config file:
 ```
 > nano ~/.config/bspwm/bspwmrc
 ```
-Declare the apps to autostart when launching a session:
+Declare the apps to autostart when launching a session: .xinitrc
 ```
 make sure sxhkdrc is launched at start: pgrep -x sxhkd > /dev/null || sxhkd &
 compositing manager: compton --backend glx --vsync opengl-swc &
 usr/lib/xfce-polkit/xfce-polkit &
 bar (here polybar, throught a script): ~/bin/polybar.launch.sh &
 wallpaper: nitrogen --restore &
+
+exec bspwm
 ```
 
 #### Bar: polybar
