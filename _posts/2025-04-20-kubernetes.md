@@ -1,6 +1,6 @@
 ---
 title: Instructions for Kubernetes
-date: 2025-04-20 12:00 -030
+date: 2025-04-20 12:00 -000
 categories: [softwarw]
 tags: [kube, dicas]              # Tag always lowercase
 ---
