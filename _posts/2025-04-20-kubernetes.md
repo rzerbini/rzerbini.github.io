@@ -5,9 +5,9 @@ categories: [softwarw]
 tags: [kube, dicas]              # Tag always lowercase
 ---
 
-# Kubernetes
+## Kubernetes
 
-
+### #micrik8s
 
 microk8s add-node\
 microk8s add-node --token-ttl 3600
@@ -42,17 +42,20 @@ source .bash_aliases
 microk8s dashboard-proxy
 
 (https://medium.com/@muppedaanvesh/deploying-nginx-on-kubernetes-a-quick-guide-04d533414967)
-# create a deployment
+
+### k3s
+
+## create a deployment
 kubectl create deployment nginx --image=nginx
 kubectl create service nodeport nginx --tcp=80:80
 
-# create a pod
+## create a pod
 kubectl run nginx-pod --image=nginx --restart=Never --port=80 -n default
-# createa service
+## createa service
 kubectl expose pod nginx-pod --type=NodePort --port=80 --name=nginx-service
-# Delete the service
+## Delete the service
 kubectl delete service nginx-service
-# Delete the pod
+## Delete the pod
 kubectl delete pod nginx-pod
 
 
@@ -83,6 +86,8 @@ curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="--write-kubeconfig-mode 644" sh
 
 /usr/local/bin/k3s-uninstall.sh
 /usr/local/bin/k3s-agent-uninstall.sh
+
+# Links
 
 http://rino.kozow.com/devops/posts/k3s-kubernetes-workshop-using-proxmox-server/
 
