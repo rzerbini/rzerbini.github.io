@@ -86,6 +86,8 @@ http://rino.kozow.com/devops/posts/k3s-kubernetes-workshop-using-proxmox-server/
 https://nvtienanh.info/blog/cai-dat-kubernetes-cluster-tren-ubuntu-server-22-04
 https://www.youtube.com/watch?v=iwlNCePWiw4
 
+{% include embed/youtube.html id='U1VzcjCB_sY' %}
+
 https://www.youtube.com/watch?v=U1VzcjCB_sY&t=2002s
 
 https://medium.com/@syed_usman_ahmed/setting-up-k3s-on-a-linux-virtual-machine-e5ffec09aeaf
@@ -103,6 +105,8 @@ kubeadm token generate
 kubeadm token create <kubeadm token generate> --print-join-command
 kubeadm join 192.168.0.232:6443 --token 735q50.pud5qo976cb13n80 --discovery-token-ca-cert-hash sha256:c2793093ee8d4d221049c95934e779b275c02ed86bfb56715f45ce77c8535704
 
+{% include embed/youtube.html id='DrcS4jrA_no' %}
 
 https://www.youtube.com/watch?v=DrcS4jrA_no&t=2809s
+
 kubeadm init --apiserver-advertise-address 192.168.0.230 --pod-network-cidr 10.244.0.0/16 --cri-socket unix:///var/run/containerd/containerd.sock
