@@ -13,25 +13,28 @@ microk8s add-node\
 microk8s add-node --token-ttl 3600
 
 From the node you wish to join to this cluster, run the following:\
+```
 microk8s join 192.168.0.169:25000/f3fd03a0a6ac93f881b553b12725a9b1/667a3ef27bfd
 
 microk8s join 192.168.0.169:25000/6de8a0b631d59ad4ddc6f9a7ec2d3537/5c9691d3d674
-
+```
 Use the '--worker' flag to join a node as a worker not running the control plane, eg:\
+```
 microk8s join 192.168.0.169:25000/f3fd03a0a6ac93f881b553b12725a9b1/667a3ef27bfd --worker
-
+```
 If the node you are adding is not reachable through the default interface you can use one of the following:\
+```
 microk8s join 192.168.0.169:25000/f3fd03a0a6ac93f881b553b12725a9b1/667a3ef27bfd
-
-
-
+```
 
 sudo snap install microk8s --classic
+```
 sudo usermod -a -G microk8s thor
 mkdir -p ~/.kube
 chmod 0700 ~/.kube
 sudo chown -f -R thor ~/.kube
 newgrp microk8s
+```
 
 echo "alias kubectl='microk8s kubectl'" >> ~/.bash_aliases
 source .bash_aliases
