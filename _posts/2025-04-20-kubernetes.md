@@ -4,10 +4,9 @@ date: 2025-04-20 12:00 -000
 categories: [softwarw]
 tags: [kube, dicas]              # Tag always lowercase
 ---
+# Kubernetes
 
-## Kubernetes
-
-### #micrik8s
+### micro8s
 
 microk8s add-node\
 microk8s add-node --token-ttl 3600
