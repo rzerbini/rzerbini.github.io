@@ -166,7 +166,7 @@ $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
 ### The VikinG Image
 
-![Desktop View](/assets/vikinG.jpg){: width="972" height="589" }
+![Desktop View](/assets/VikinG.jpg){: width="972" height="589" }
 
 ### Default (with caption)
 
