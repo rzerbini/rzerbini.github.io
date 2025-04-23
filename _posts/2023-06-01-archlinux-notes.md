@@ -29,9 +29,12 @@ add to /etc/resolv.conf the nameserver=8.8.8.8
 * 2
 * 3
 
-
 ```bash
 sudo pacman -Syyu && sudo pacman -U package.tar.gz hight light 
 ```
 
-update hoje
+## tmp increase
+```
+mount -o remount,size=5G /tmp/
+```
+
