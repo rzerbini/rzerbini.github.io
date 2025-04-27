@@ -118,3 +118,25 @@ ref: https://medium.com/tech-notes-and-geek-stuff/installing-bspwm-on-debian-fd6
      https://github.com/thespation/dpux_bspwm/tree/main
 
      see also for ArchLinux https://www.youtube.com/watch?v=PLBm0C5Gv58\](2023-07-23-bspwm-debian.md)](2023-07-23-bspwm-debian.md)
+
+### How to install GitHub Desktop?
+
+1. Install Prerequisites:- \
+To install GitHub Desktop you need to install yay package manager in Arch. \
+Just follow the below command to install yay package manager.
+
+```
+sudo pacman -Syu \
+sudo pacman -S --needed --noconfirm base-devel git \
+git clone https://aur.archlinux.org/yay-git.git \
+sudo mv yay-git /opt/ \
+cd /opt/yay-git \
+makepkg -si \
+```
+
+install yay package manager in arch linux
+To confirm the the installation of yay package manager just type
+
+sudo yay
+
+in your terminal.     
