@@ -8,17 +8,17 @@ tags: [archlinux, bspwm, install]
 ### Install Bspwm on Archlinux
 
 ```
-sudo pacman -S bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmus ranger dmenu thunar xorg-xinit kitty
+sudo pacman -S bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmus ranger dmenu thunar xorg xorg-xinit xorg-xsetroot kitty
 ```
 
 [opy the example configuration to your ~/.config folder and make sure bspwmrc is executable :
 
 
 ```
-> cd ~/.config/ && mkdir -p bspwm sxhkd
-> cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/
-> cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/
-> chmod u+x ~/.config/bspwm/bspwmrc
+cd ~/.config/ && mkdir -p bspwm sxhkd
+cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/
+cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/
+chmod u+x ~/.config/bspwm/bspwmrc
 ```
 
 #### Keybindings: sxhkdrc
@@ -29,7 +29,7 @@ sudo pacman -S bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmu
 #### Config file: bspwmrc
 Check the config file:
 ```
-> nano ~/.config/bspwm/bspwmrc
+nano ~/.config/bspwm/bspwmrc
 ```
 Declare the apps to autostart when launching a session:
 ```
