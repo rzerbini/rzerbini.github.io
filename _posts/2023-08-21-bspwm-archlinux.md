@@ -8,17 +8,17 @@ tags: [archlinux, bspwm, install]
 ### Install Bspwm on Archlinux
 
 ```
-sudo pacman -S bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmus ranger dmenu thunar xorg-xinit kitty
+sudo pacman -S bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmus ranger dmenu thunar xorg xorg-xinit xorg-xsetroot kitty
 ```
 
 [opy the example configuration to your ~/.config folder and make sure bspwmrc is executable :
 
 
 ```
-> cd ~/.config/ && mkdir -p bspwm sxhkd
-> cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/
-> cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/
-> chmod u+x ~/.config/bspwm/bspwmrc
+cd ~/.config/ && mkdir -p bspwm sxhkd
+cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/
+cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/
+chmod u+x ~/.config/bspwm/bspwmrc
 ```
 
 #### Keybindings: sxhkdrc
@@ -29,7 +29,7 @@ sudo pacman -S bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmu
 #### Config file: bspwmrc
 Check the config file:
 ```
-> nano ~/.config/bspwm/bspwmrc
+nano ~/.config/bspwm/bspwmrc
 ```
 Declare the apps to autostart when launching a session:
 ```
@@ -118,3 +118,28 @@ ref: https://medium.com/tech-notes-and-geek-stuff/installing-bspwm-on-debian-fd6
      https://github.com/thespation/dpux_bspwm/tree/main
 
      see also for ArchLinux https://www.youtube.com/watch?v=PLBm0C5Gv58\](2023-07-23-bspwm-debian.md)](2023-07-23-bspwm-debian.md)
+
+### How to install GitHub Desktop?
+
+1. Install Prerequisites:- \
+To install GitHub Desktop you need to install yay package manager in Arch. \
+Just follow the below command to install yay package manager.
+
+```
+sudo pacman -Syu 
+sudo pacman -S --needed --noconfirm base-devel git 
+git clone https://aur.archlinux.org/yay-git.git 
+sudo mv yay-git /opt/ 
+cd /opt/yay-git 
+makepkg -si 
+```
+
+install yay package manager in arch linux
+To confirm the the installation of yay package manager just type
+
+sudo yay
+
+in your terminal.     
+
+https://analyticalnahid.medium.com/how-to-install-git-and-github-desktop-in-arch-linux-bb70c56751d8
+

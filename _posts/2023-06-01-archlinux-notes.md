@@ -38,7 +38,7 @@ sudo pacman -Syyu && sudo pacman -U package.tar.gz hight light
 mount -o remount,size=5G /tmp/
 ```
 
-## XFCE$ Keyboard shortcuts
+## XFCE4 Keyboard shortcuts
 ```
 ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml\
 ~/.config/Thunar/accels.scm\
